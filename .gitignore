@@ -1,2 +1,22 @@
+########
+# System Files
+########
 .DS_Store
+
+########
+# Node Files
+########
 node_modules/
+
+########
+# Craft App
+########
+craft/
+!craft/config/
+!craft/plugins/
+
+########
+# Compiled Files
+########
+public/
+

@@ -4,6 +4,9 @@
   "description": "A boilerplate for getting started with a craft project and nanobox.io",
   "main": "index.js",
   "scripts": {
+    "init": "./scripts/init.sh",
+    "prestart": "./scripts/check-install.sh",
+    "start": "./scripts/start.sh",
     "test": "test"
   },
   "repository": {
