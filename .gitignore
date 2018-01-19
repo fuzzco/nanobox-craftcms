@@ -11,7 +11,9 @@ node_modules/
 ########
 # Craft App
 ########
-craft/
+temp/
+temp.zip
+craft/**/*
 !craft/config/
 !craft/plugins/
 
