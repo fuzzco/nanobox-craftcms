@@ -8,26 +8,35 @@
  */
 
 return array(
-
-	// Base site URL
-	'siteUrl' => null,
-
-	// Environment-specific variables (see https://craftcms.com/docs/multi-environment-configs#environment-specific-variables)
-	'environmentVariables' => array(),
-
-	// Default Week Start Day (0 = Sunday, 1 = Monday...)
-	'defaultWeekStartDay' => 0,
-
-	// Enable CSRF Protection (recommended, will be enabled by default in Craft 3)
-	'enableCsrfProtection' => true,
-
-	// Whether "index.php" should be visible in URLs (true, false, "auto")
-	'omitScriptNameInUrls' => 'auto',
-
-	// Control Panel trigger word
-	'cpTrigger' => 'admin',
-
-	// Dev Mode (see https://craftcms.com/support/dev-mode)
-	'devMode' => false,
-
+  '*' => array(
+    'omitScriptNameInUrls' => true,
+    'generateTransformsBeforePageLoad' => true,
+    'usePathInfo'=> true,
+    'cpTrigger' => 'admin',
+    'cacheDuration' => 'P2W',
+    'useCompressedJs' => true,
+    'allowAutoUpdates' => false,
+    'siteName' => ''
+  ),
+  // Localhost development site
+  '.local' => array(
+    'devMode' => true,
+    'doAnalytics' => false,
+    'useCompressedJs' => false,
+    'allowAutoUpdates' => true
+  ),
+  // Staging site
+  '.nanobox.io' => array(
+    'devMode' => true,
+    'doAnalytics' => false,
+    'useCompressedJs' => false,
+    'allowAutoUpdates' => true
+  ),
+  // Production site
+  'whatever.com' => array(
+    'devMode' => false,
+    'doAnalytics' => true,
+    'useCompressedJs' => true,
+    'allowAutoUpdates' => true
+  )
 );
