@@ -1,0 +1,37 @@
+run.config:
+  engine: php
+  engine.config:
+    runtime: php-7.0
+    document_root: public
+    webserver: apache
+    extensions:
+      - ctype
+      - pdo
+      - pdo_mysql
+      - mcrypt
+      - gd
+      - mbstring
+      - json
+      - curl
+      - dom
+      - iconv
+      - imagick
+      - session
+      - zlib
+
+web.craft:
+  start:
+    php: start-php
+    apache: start-apache
+  network_dirs:
+    data.storage:
+      - craft/storage
+  log_watch:
+    craft[error]: craft/storage/runtime/logs/craft.log
+    craft[stacktrace]: craft/storage/runtime/logs/phperrors.log
+
+data.db:
+  image: nanobox/mysql:5.6
+
+data.storage:
+  image: nanobox/unfs:0.9

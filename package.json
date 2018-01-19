@@ -1,0 +1,20 @@
+{
+  "name": "nanobox-craft",
+  "version": "1.0.0",
+  "description": "A boilerplate for getting started with a craft project and nanobox.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/fuzzco/nanobox-craft.git"
+  },
+  "keywords": [
+    "nanobox",
+    "craft"
+  ],
+  "author": "Fuzzco",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/fuzzco/nanobox-craft#readme"
+}
