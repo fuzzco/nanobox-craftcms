@@ -6,7 +6,7 @@
   "scripts": {
     "init": "./scripts/init.sh",
     "prestart": "./scripts/check-install.sh",
-    "start": "./scripts/start.sh",
+    "start": "nanobox run php-server",
     "test": "test"
   },
   "repository": {
