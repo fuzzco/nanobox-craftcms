@@ -13,9 +13,10 @@ node_modules/
 ########
 temp/
 temp.zip
-craft/**/*
-!craft/config/
-!craft/plugins/
+craft/app
+craft/storage
+craft/templates
+
 
 ########
 # Compiled Files

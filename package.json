@@ -19,5 +19,10 @@
   ],
   "author": "Fuzzco",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/fuzzco/nanobox-craft#readme"
+  "homepage": "https://bitbucket.org/fuzzco/nanobox-craft#readme",
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "prompt": "^1.0.0",
+    "yargs": "^10.1.1"
+  }
 }
