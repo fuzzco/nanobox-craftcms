@@ -8,6 +8,9 @@
     "prestart": "./scripts/check-install.sh",
     "start": "nanobox run php-server",
     "dev:html": "cp -R source/html/ craft/templates/",
+    "dev:css": "node-sass source/css/ -o public/css",
+    "dev:img": "imagemin-newer source/img/ public/img/",
+    "dev:js": "rollup -c",
     "test": "test"
   },
   "repository": {
