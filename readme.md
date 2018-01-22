@@ -2,10 +2,10 @@
 
 ## ToDo
 
-- [ ] Sass tooling
-- [ ] Js tooling
+- [x] Sass tooling
+- [x] Js tooling
 - [ ] Post-HTML & Post-CSS
-- [ ] Image minification
+- [x] Image minification
 - [ ] Init scripts to tie in prompt to configation file ... .env maybe?
 - [ ] Write deploy scripts
 - [ ] Add url to dns on start from prompt

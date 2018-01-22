@@ -8,6 +8,9 @@
 {% extends "_layout" %}
 
 {% block content %}
+  {% if craft.config.devMode %}
+    <h6>Craft is running in Dev Mode.</h6>
+  {% endif %}
   <h1>{{ entry.title }}</h1>
 
   {{ entry.body }}
