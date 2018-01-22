@@ -9,6 +9,7 @@
 
 return array(
   '*' => array(
+    'devMode' => true,
     'omitScriptNameInUrls' => true,
     'generateTransformsBeforePageLoad' => true,
     'usePathInfo'=> true,
