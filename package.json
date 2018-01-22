@@ -11,7 +11,7 @@
     "dev": "parallelshell 'nanobox run php-server' 'rerun-script'",
     "prebuild": "npm run predev",
     "build": "run-p build:css build:js",
-    "build:css": "postcss public/css/**/*.css --use autoprefixer cssnano",
+    "build:css": "postcss public/css/**/*.css -o public/css/style.min.css --use autoprefixer cssnano",
     "build:js": "rollup --config rollup.prod.config.js",
     "dev:html": "cp -R source/html/ craft/templates/",
     "dev:css": "node-sass source/css/ -o public/css",
