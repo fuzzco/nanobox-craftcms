@@ -21,5 +21,7 @@ craft/templates
 ########
 # Compiled Files
 ########
-public/
+public/css
+public/js
+public/img
 
