@@ -6,7 +6,7 @@ import commonjs from 'rollup-plugin-commonjs';
 export default {
   input: 'source/js/app.js',
   output: {
-    file: 'public/bundle.js',
+    file: 'public/js/bundle.js',
     format: 'iife'
   },
   plugins: [

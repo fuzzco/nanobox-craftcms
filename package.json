@@ -6,12 +6,20 @@
   "scripts": {
     "init": "./scripts/init.sh",
     "prestart": "./scripts/check-install.sh",
-    "start": "nanobox run php-server",
+    "start": "npm run dev",
+    "predev": "run-p dev:html dev:css dev:img dev:js",
+    "dev": "parallelshell 'nanobox run php-server' 'rerun-script'",
     "dev:html": "cp -R source/html/ craft/templates/",
     "dev:css": "node-sass source/css/ -o public/css",
     "dev:img": "imagemin-newer source/img/ public/img/",
     "dev:js": "rollup -c",
     "test": "test"
+  },
+  "watches": {
+    "dev:html": "source/html/**/*.*",
+    "dev:css": "source/css/**/*.*",
+    "dev:img": "source/img/**/*.*",
+    "dev:js": "source/js/**/*.*"
   },
   "repository": {
     "type": "git",
@@ -32,6 +40,7 @@
     "parallelshell": "^3.0.2",
     "posthtml": "^0.11.2",
     "prompt": "^1.0.0",
+    "rerun-script": "^0.6.0",
     "rollup": "^0.54.1",
     "rollup-plugin-buble": "^0.18.0",
     "rollup-plugin-commonjs": "^8.2.6",
